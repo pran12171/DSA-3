@@ -1,0 +1,10 @@
+#Submission metadata
+#Thu Sep 24 12:14:50 IST 2026
+extractedText=Java arrays are fundamental data structures that hold elements of the same type in contiguous memory locations.\r\nAn array in Java is an object that contains elements of similar data types.\r\nThe size of an array is fixed upon creation and cannot be changed dynamically.\r\n
+fileName=JAVAARRAYS.txt
+filePath=data\\submissions\\StudentTest_20260924_121450_JAVAARRAYS.txt
+fileType=TXT
+similarityPercentage=0.0
+status=FIRST SUBMISSION
+studentName=StudentTest
+submissionDate=2026-09-24 12\:14\:50

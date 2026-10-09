@@ -1,0 +1,387 @@
+Topic : JAVA ARRAYS:
+-----------------------------
+
+Java array is an object which contains elements of a similar data type.  
+
+  Syntax:
+         <datatype> varaible_name[size];
+ -> array size- 0 to n-1 
+
+   array initialization :(creating the array)
+-------------------------------------------
+    <datatype> <var>[size]=new <datatype>[size];
+
+   Example :
+            int a[]=new a[2];
+
+      //a[2] i.e a[0]  a[1] 
+                 a[0]=10; a[1]=20;                
+
+________________________________________________
+Types of arrays:
+------------------
+1)1-D (one-dimensional)- its define only one indices
+                      ex: int a[]=new int a[5];
+
+2) 2-d(Two-dimensional)-its define only two indices
+                 ex: int a[][]=new int a[2][2];
+ --------------------------------------------
+1-d:
+
+1) Write a java program to demonstrate the 1-d arrays.
+------------------------------------------------
+
+class Demoarray
+{
+   public static void main(String args[])
+   {
+
+      int a[]=new int[5];
+       a[0]=10;
+       a[1]=20;
+       a[2]=30;
+       a[3]=40;
+       a[4]=50;
+      for(int i=0;i<5;i++)
+      {
+           System.out.println("The array elements are" +a[i]);
+      }
+}
+}
+_______________________________________________________________________
+
+2)write a java program to read and print the values using scanner statement using array .
+-------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+class ReadPrintArray
+ {
+    public static void main(String args[])
+    {
+         Scanner sc=new Scanner(System.in);
+         System.out.println(" enter the array size");
+         int n=sc.nextInt();
+         int a[]=new int[n];  // array initilizations
+         System.out.println("To read the array elements are");
+         for(int i=0;i<n;i++)
+         {
+            a[i]=sc.nextInt();             // to read the array values
+         }
+
+        System.out.println("To print the array elements are");
+        
+         for(int i=0;i<n;i++)       // to print the array values
+         {
+            System.out.println(a[i]);
+         }
+     }
+}
+________________________________________________________________________
+
+Write a java program the sum of numbers using the array elements.
+
+  import java.util.Scanner;
+   class DemoSumArray
+   {
+      public static void main(String args[])
+      {
+          int sum=0;
+          Scanner obj=new Scanner(System.in);
+          System.out.println("Enter the array size");
+          int n=obj.nextInt();
+          int a[]=new int[n]; // n=3
+          System.out.println("enter "+n+" array elements are ");
+         for(int i=0;i<n;i++)
+         {
+             a[i]=obj.nextInt(); //a[0]=10  a[1]=20  a[2]=30
+             
+         }
+         for(int i=0;i<n;i++)
+         {
+            sum=sum+a[i];   // sum=0+a[0]=0+10 =10   sum=10+a[1] = 10+20 =30 sum=30+30=60
+             
+         }
+          System.out.println("The sum is  " +sum);
+    }
+}
+------------------------------------------------------------------
+Write a java program to find the min and max value using array elements.
+------------------------------------------------------------------------
+  logic 1: if(min[i]>max[i])          
+           s.o.p(min[i])
+           else
+           s.op (max[i])
+
+Types of array:
+-----------------
+
+1) Single Dimension arrays : single dimension array to defines one indices .
+----------------------------
+   Syntax: 
+          datatype <var>=new <datatype>[size];
+
+  Example:
+              int a=new a[5];
+ 
+
+2) Two-dimensional arrays: Two-dimensional array to define two indices .
+-------------------------
+ Syntax: 
+          datatype <var>=new <datatype>[size][size];
+
+   Example:
+              1) int a=new a[5][5];
+
+              2) int[][] matrix = {{10, 20, 30},{40, 50, 60},{70, 80, 90} };
+              3) int a[][]=new int[2][2];
+___________________________________________________________________________________
+
+
+write a java program to demonstrate the two-dimensional array
+-----------------------------------------------------------
+
+ class TwoDimarray
+{
+   public static void main(String args[])
+   {
+
+      int a[][]=new int[2][2];
+       a[0][0]=10;
+       a[0][1]=20;
+       a[1][0]=30;
+       a[1][1]=40;
+
+      for(int i=0;i<2;i++)
+      {
+          for(int j=0;j<2;j++)
+          {
+          
+           System.out.println("The array elements are" +a[i][j]);
+         }
+      }
+   }
+}
+____________________________________________________________________
+2) write a java program to demonstrate the two-dimensional array using scanner class.
+
+   import java.util.*;
+   class TwoDimScanner
+   {
+      public static void main(String args[])
+      {
+            Scanner sc=new Scanner(System.in);
+            System.out.print("Enter number of rows: ");
+            int rows = sc.nextInt();
+            System.out.print("Enter number of columns: ");
+            int cols = sc.nextInt();
+            int a[][] = new int[rows][cols];  // int a[][]=new int[2][2];
+            System.out.println("Enter the elements of the array:");
+            
+            for(int i = 0; i < rows; i++) 
+            {
+            for (int j = 0; j < cols; j++) 
+            {
+                a[i][j] = sc.nextInt();
+            }
+            }
+
+             System.out.println("The 2-dim array elements is:");
+             for(int i = 0; i < rows; i++) 
+             {
+                 for(int j = 0; j < cols; j++) 
+                 {
+                   System.out.println(a[i][j] + " ");
+                 }
+                     
+             }
+     }
+}
+           
+_________________________________________________________________________________
+
+Write a java program to matrix of addition using 2-d array.
+------------------------------------------------------------------
+import java.util.Scanner;
+
+class MatrixAdd
+{
+        public static void main(String args[]) 
+       {
+        Scanner obj = new Scanner(System.in);
+
+        System.out.println("Enter the row size:");
+        int r = obj.nextInt();
+        System.out.println("Enter the column size:");
+        int c = obj.nextInt();
+
+        int a[][] = new int[r][c];
+        int b[][] = new int[r][c];
+        int sum[][] = new int[r][c];
+
+        System.out.println("Enter the elements of first matrix:");
+         for (int i = 0; i < r; i++) 
+         {
+            for (int j = 0; j < c; j++) 
+           {
+                a[i][j] = obj.nextInt();
+            }
+        }
+
+        System.out.println("Enter the elements of second matrix:");
+        for (int i = 0; i < r; i++) 
+         {
+            for (int j = 0; j < c; j++) 
+            {
+                b[i][j] = obj.nextInt();
+            }
+        }
+
+           // logic of sum matrix 
+         for (int i = 0; i < r; i++) 
+         {
+            for (int j = 0; j < c; j++) 
+            {
+                sum[i][j] = a[i][j] + b[i][j];
+            }
+        }
+
+  
+          System.out.println("The sum of two matrices is:");
+            for (int i = 0; i < r; i++) 
+           {
+            for (int j = 0; j < c; j++) 
+            {
+                System.out.print(sum[i][j] + " ");
+            }
+            System.out.println();
+          }
+    }
+}
+
+
+
+Write a java program  matrix subtraction using 2-d array.
+---------------------------------------------------------
+
+
+
+import java.util.Scanner;
+
+class MatrixSub
+{
+        public static void main(String args[]) 
+       {
+        Scanner obj = new Scanner(System.in);
+
+        System.out.println("Enter the row size:");
+        int r = obj.nextInt();
+        System.out.println("Enter the column size:");
+        int c = obj.nextInt();
+
+        int a[][] = new int[r][c];
+        int b[][] = new int[r][c];
+        int sum[][] = new int[r][c];
+
+        System.out.println("Enter the elements of first matrix:");
+        for (int i = 0; i < r; i++) 
+        {
+            for (int j = 0; j < c; j++) 
+             {
+                a[i][j] = obj.nextInt();
+             }
+        }
+
+        System.out.println("Enter the elements of second matrix:");
+         for (int i = 0; i < r; i++) 
+         {
+            for (int j = 0; j < c; j++) 
+            {
+                b[i][j] = obj.nextInt();
+            }
+        }
+
+        
+         for (int i = 0; i < r; i++) 
+         {
+            for (int j = 0; j < c; j++) 
+            {
+                sum[i][j] = a[i][j] - b[i][j];
+            }
+        }
+
+  
+        System.out.println("The sum of two matrices is:");
+            for (int i = 0; i < r; i++) 
+           {
+            for (int j = 0; j < c; j++) 
+            {
+                System.out.print(sum[i][j] + " ");
+            }
+            System.out.println();
+          }
+    }
+}
+-------------------------------------------------------------------
+Write a java program to transpose matrix using  2-d  array.
+------------------------------------------------------------
+
+import java.util.Scanner;
+
+class MatrixTranspose 
+{
+        public static void main(String args[])
+       {
+        Scanner obj = new Scanner(System.in);
+
+        System.out.println("Enter the row size:");
+        int r = obj.nextInt();
+        System.out.println("Enter the column size:");
+        int c = obj.nextInt();
+
+        int a[][] = new int[r][c];
+
+        System.out.println("Enter the elements of the matrix:");
+        for (int i = 0; i < r; i++) 
+        {
+            for (int j = 0; j < c; j++) 
+            {
+                a[i][j] = obj.nextInt();
+            }
+        }
+
+        System.out.println("\nTo Display the Matrix:");
+        for (int i = 0; i < r; i++) 
+        {
+            for (int j = 0; j < c; j++) 
+            {
+                System.out.print(a[i][j] + " ");
+            }
+               System.out.println();
+        }
+
+        // Find transpose
+        int trans[][] = new int[c][r];  // int[2][2]
+        for (int i = 0; i < r; i++) 
+         {
+            for (int j = 0; j < c; j++) 
+            {
+                trans[j][i] = a[i][j];  // trans[0][0]=a[0][0]
+            }
+        }
+
+      
+        System.out.println("\nTranspose of the Matrix:");
+        for (int i = 0; i < c; i++) 
+        {
+            for (int j = 0; j < r; j++) 
+           {
+                System.out.print(trans[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+       
+    }
+}
+          
+      

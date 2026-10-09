@@ -1,0 +1,10 @@
+#Submission metadata
+#Wed Sep 16 00:00:54 IST 2026
+extractedText=for each loop\:\r\n-----------------------\r\nSyntax \:\r\nfor(dataType item \: array)\r\n {\r\n    ...\r\n}\r\n___________________________________\r\narray - collection of elements\r\n_______________________________________\r\nitem - each item of array/collection is assigned \r\nto this variable\r\n___________________________\r\ndataType - the data type of the array/collection\r\n_____________________________________________\r\n\r\nProgram 1\:\r\nclass ForeachDemo\r\n{\r\n  public static void main(String[] args) \r\n   {\r\n      \r\n    // create an array\r\n     int[] numbers \= {10,20,30,40};\r\n    \r\n     // for each loop \r\n     for (int number\: numbers)\r\n    {\r\n      System.out.println(number);\r\n    }\r\n  }\r\n}\r\n------------------------------------------------------\r\nProgram 2\:\r\n\r\n// Calculate the sum of all elements of an array\r\n\r\n class Foreach \r\n {\r\n public static void main(String[] args)\r\n {\r\n   // an array of numbers\r\n   int[] numbers \= {10, 20, 30, 40, 50};\r\n   int sum \= 0;\r\n\r\n   // iterating through each element of the array \r\n   for (int number\: numbers) \r\n   {\r\n     sum +\= number;\r\n   }\r\n \r\n   System.out.println("Sum \= " + sum);\r\n }\r\n}\r\n--------------------------------------------------\r\nProgram 3\:\r\n\r\nclass Example3 \r\n{\r\n public static void main(String[] args) \r\n {\r\n\r\n   char[] vowels \= {'a', 'e', 'i', 'o', 'u'};\r\n  \r\n   // iterating through an array using the for-each loop\r\n   for (char item\: vowels) \r\n   {\r\n     System.out.println(item);\r\n   }\r\n }\r\n}\r\n---------------------------------------\r\n\r\n
+fileName=foreach.txt
+filePath=data\\submissions\\suiii_20260916_000054_foreach.txt
+fileType=TXT
+similarityPercentage=0.0
+status=FIRST SUBMISSION
+studentName=suiii
+submissionDate=2026-09-16 00\:00\:54

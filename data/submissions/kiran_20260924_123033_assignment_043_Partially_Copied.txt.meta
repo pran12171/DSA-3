@@ -1,0 +1,10 @@
+#Submission metadata
+#Thu Sep 24 12:30:33 IST 2026
+extractedText=Assignment Topic\: Artificial Intelligence\r\n\r\nIntroduction\r\nArtificial intelligence focuses on building systems that perform tasks commonly associated with intelligent behavior, such as reasoning, learning, perception, planning, and language processing.\r\n\r\nDiscussion\r\nAn AI system may use search algorithms, knowledge representation, logical reasoning, probabilistic methods, or machine learning. Search techniques explore possible states to find a path toward a goal. Heuristic search methods use additional information to prioritize promising states. Modern AI also includes neural networks and large-scale models that learn patterns from data.\r\n\r\nApplication\r\nA route-planning system can model locations as states and roads as actions. An algorithm can search this space for a suitable route, while a heuristic such as estimated remaining distance can reduce unnecessary exploration.\r\n\r\nConclusion\r\nThe concepts discussed in artificial intelligence are useful when designing practical computing systems. A clear understanding of the underlying principles helps developers select suitable techniques and evaluate their results.\r\n\r\nAdditional Observation\r\nPerformance should be considered together with correctness because a solution that works on a small example may behave differently as the amount of data increases.\r\n
+fileName=assignment_043_Partially_Copied.txt
+filePath=data\\submissions\\kiran_20260924_123033_assignment_043_Partially_Copied.txt
+fileType=TXT
+similarityPercentage=6.257825944119763
+status=ORIGINAL
+studentName=kiran
+submissionDate=2026-09-24 12\:30\:33

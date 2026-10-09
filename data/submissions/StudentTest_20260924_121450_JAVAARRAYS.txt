@@ -1,0 +1,3 @@
+Java arrays are fundamental data structures that hold elements of the same type in contiguous memory locations.
+An array in Java is an object that contains elements of similar data types.
+The size of an array is fixed upon creation and cannot be changed dynamically.

@@ -1,0 +1,1 @@
+Data structures are important concepts in computer science. Arrays, linked lists, stacks and queues are commonly used to organize data efficiently.
